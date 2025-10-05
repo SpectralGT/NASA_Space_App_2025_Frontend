@@ -120,7 +120,6 @@ export default function App() {
 
     async function getPrediction(features: Number[]) {
 
-      alert("tried");
 
       const response = await fetch("https://nasa-space-app-2025-backend.onrender.com/predict", {
         method: "POST",
@@ -128,11 +127,9 @@ export default function App() {
         body: JSON.stringify({ features }) // Array of numbers
       });
 
-      alert("tried2");
 
 
       const data = await response.json();
-      alert(data.prediction);
       prediction = data.prediction;
 
     }
