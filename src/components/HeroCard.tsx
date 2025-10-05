@@ -12,7 +12,7 @@ const HeroCard: React.FC<HeroCardProps> = ({ onSubmit, isComplete, isAnalyzing }
 
   return (
     <div 
-      className="flex-1 glass-panel rounded-3xl p-12 hero-float relative overflow-hidden"
+      className="flex-1 glass-panel rounded-3xl p-12 relative overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
