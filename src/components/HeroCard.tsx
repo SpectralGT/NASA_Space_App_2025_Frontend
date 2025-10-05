@@ -45,7 +45,7 @@ const HeroCard: React.FC<HeroCardProps> = ({ onSubmit, isComplete, isAnalyzing }
           </div>
           
           <p className="text-lg text-[var(--exo-dim)] font-light leading-relaxed tracking-wide">
-            Complete the 9 key parameters to unlock your discovery
+            Complete the 8 key parameters to unlock your discovery
           </p>
         </div>
         

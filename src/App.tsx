@@ -25,13 +25,6 @@ interface ResultData {
 export default function App() {
   const [parameters, setParameters] = useState<ParameterField[]>([
     {
-      id: 'disposition_score',
-      label: 'Disposition Score',
-      unit: 'No Units',
-      description: 'Disposition Score',
-      value: ''
-    },
-    {
       id: 'orbital_period',
       label: 'Orbital Period',
       unit: 'Days',
@@ -134,8 +127,8 @@ export default function App() {
 
     }
 
-    // Example input: 9 features
-    await getPrediction([params.disposition_score,params.orbital_period,params.planetary_radius,params.equilibrium_temperature,params.insolation_flux,params.transit_snr,params.transit_depth,params.transit_duration,params.stellar_radius]);
+    // Example input: 8 features
+    await getPrediction([params.orbital_period,params.planetary_radius,params.equilibrium_temperature,params.insolation_flux,params.transit_snr,params.transit_depth,params.transit_duration,params.stellar_radius]);
 
 
 
